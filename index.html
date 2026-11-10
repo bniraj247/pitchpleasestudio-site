@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitch Please Studio | Coming Soon</title>
+<meta name="description" content="Pitch Please Studio's new website is coming soon. Got something worth talking about? Big idea, small question, brand crisis: drop us a mail.">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<!-- Only files from this site may load: no outside scripts, styles, fonts or trackers. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self'; form-action 'self' mailto:; base-uri 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="canonical" href="https://pitchpleasestudio.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pitch Please Studio">
+<meta property="og:title" content="Pitch Please Studio | Coming Soon">
+<meta property="og:description" content="This page has trust issues. It doesn't want to show up until everything looks perfect.">
+<meta property="og:url" content="https://pitchpleasestudio.com/">
+<meta property="og:image" content="https://pitchpleasestudio.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" type="image/webp" href="assets/coming-soon.webp" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/aileron-400.woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div class="stage">
+      <img class="logo" src="assets/logo.webp" alt="Pitch Please Studio" width="554" height="455" decoding="async">
+      <h1 class="art"><img src="assets/coming-soon.webp" alt="Coming soon" width="1568" height="576" fetchpriority="high"></h1>
+      <img class="trust-shadow" src="assets/trust-shadow.webp" alt="" width="300" height="78" aria-hidden="true">
+      <p class="trust"><img src="assets/trust-issues.svg" alt="This page has trust issues." width="432" height="56"></p>
+    </div>
+    <p class="subtitle">It doesn't want to show up until everything looks perfect.</p>
+  </header>
+
+  <main class="lower">
+    <div class="wrap">
+
+      <section class="talk" aria-labelledby="talk-title">
+        <h2 class="talk-title" id="talk-title"><img src="assets/lets-start.svg" alt="Let's start the conversation." width="547" height="68"></h2>
+        <p class="lede">Every project starts with one. This one's yours.</p>
+
+        <!-- FORM SENDING
+             data-endpoint="" (empty): pressing the button opens the visitor's own email app with the message ready to send.
+             data-endpoint="https://…": the message is sent in the background to that address instead (see assets/main.js).
+             Without JavaScript the browser falls back to the mailto action below. -->
+        <form class="form" id="contact-form" action="mailto:namaste@pitchpleasestudio.com" method="post" enctype="text/plain" data-endpoint="" data-to="namaste@pitchpleasestudio.com">
+          <div class="field">
+            <label for="f-name"><span class="grad">What's your name?</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+          </div>
+          <div class="field">
+            <label for="f-email"><span class="grad">Email</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="200" required>
+          </div>
+          <div class="field">
+            <label for="f-company"><span class="grad">Company</span></label>
+            <input id="f-company" name="company" type="text" autocomplete="organization" maxlength="150">
+          </div>
+          <div class="field">
+            <label for="f-looking"><span class="grad">What are you looking for?</span></label>
+            <input id="f-looking" name="looking_for" type="text" maxlength="200">
+          </div>
+          <div class="field field-wide">
+            <label for="f-message"><span class="grad">Tell us more</span></label>
+            <textarea id="f-message" name="message" rows="4" maxlength="4000" required></textarea>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="f-website">Leave this box empty</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="actions field-wide">
+            <button class="pill" type="submit">
+              <span class="pill-label">Send It Our Way</span>
+              <svg class="arrow" aria-hidden="true" focusable="false" viewBox="0.359 -4.016 8.672 3.297"><path d="M7.125-4.016Q7.733-3.358 8.172-3q.45.345.86.516v.203q-.47.223-.891.562-.423.345-1.016 1h-.36q.436-.919.907-1.422H.359v-.453h7.313q-.344-.451-.484-.656a8 8 0 0 1-.407-.766Zm0 0"/></svg>
+            </button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite" hidden></p>
+          </div>
+        </form>
+      </section>
+
+      <section class="contact" aria-label="Contact details">
+        <p class="big">Got something worth talking about?<br>Big idea. Small question. Brand crisis. Existential business meltdown. We'll take all of it.</p>
+
+        <p class="group group-mail"><span class="grad"><strong>Drop us a mail</strong><br><em>(We won't leave you on read.)</em></span></p>
+
+        <p class="group group-info"><span class="grad"><strong>Info &amp; Careers</strong></span><br>
+          <a class="mail" href="mailto:namaste@pitchpleasestudio.com">namaste@pitchpleasestudio.com</a></p>
+
+        <p class="group group-biz"><span class="grad"><strong>Business &amp; Partnerships</strong></span><br>
+          <a class="mail" href="mailto:shristhi@pitchpleasestudio.com">shristhi@pitchpleasestudio.com</a></p>
+
+        <div class="group group-follow">
+          <span class="grad"><strong>Follow us</strong></span>
+          <ul class="social">
+            <li><!-- Instagram address not set yet: icon is shown but is not a link --><span class="soc ig" data-missing-link="instagram" role="img" aria-label="Instagram"><svg aria-hidden="true" focusable="false" viewBox="201.269 1606.663 20.302 20.303"><path d="M207.215 1606.734c-1.078.051-1.817.223-2.461.477a4.9 4.9 0 0 0-1.797 1.172 5 5 0 0 0-1.168 1.8c-.246.649-.418 1.383-.465 2.465s-.058 1.43-.054 4.184c.003 2.758.02 3.105.07 4.188.05 1.078.222 1.816.476 2.46.258.668.61 1.235 1.172 1.797.567.563 1.133.91 1.801 1.168.649.25 1.387.418 2.465.465 1.082.05 1.43.059 4.184.055 2.757-.004 3.105-.02 4.187-.07 1.078-.051 1.816-.223 2.46-.477a5 5 0 0 0 1.798-1.172 5 5 0 0 0 1.168-1.8c.25-.65.418-1.387.465-2.466.047-1.082.058-1.43.054-4.183-.004-2.758-.02-3.102-.07-4.188-.05-1.078-.223-1.816-.477-2.46a4.9 4.9 0 0 0-1.171-1.797 5 5 0 0 0-1.801-1.168c-.645-.25-1.383-.418-2.465-.465-1.082-.051-1.43-.059-4.184-.055-2.757.004-3.101.016-4.187.07m.12 18.348c-.987-.043-1.526-.207-1.886-.344a3.15 3.15 0 0 1-1.168-.758 3.14 3.14 0 0 1-.761-1.164c-.141-.359-.31-.894-.356-1.886-.05-1.067-.059-1.39-.066-4.102-.004-2.707.007-3.027.054-4.098.04-.992.207-1.527.344-1.886.184-.473.402-.813.758-1.168a3.14 3.14 0 0 1 1.164-.762c.36-.14.894-.309 1.883-.355 1.07-.051 1.394-.059 4.101-.067 2.711-.004 3.032.004 4.106.055.988.043 1.523.203 1.883.344.472.183.812.402 1.168.757.355.356.578.692.761 1.165.14.359.309.894.356 1.882.05 1.07.062 1.395.066 4.102.004 2.71-.004 3.031-.05 4.101-.044.989-.212 1.528-.348 1.887a3.15 3.15 0 0 1-.758 1.168 3.2 3.2 0 0 1-1.164.762c-.36.14-.895.305-1.883.351-1.07.051-1.39.063-4.105.067-2.707.004-3.028-.004-4.098-.051m8.273-13.695c0 .676.551 1.218 1.22 1.215.675 0 1.218-.547 1.218-1.22a1.22 1.22 0 0 0-1.223-1.214c-.672 0-1.215.547-1.215 1.219m-9.402 5.437a5.216 5.216 0 0 0 5.223 5.203 5.216 5.216 0 0 0 5.203-5.222 5.213 5.213 0 0 0-10.426.02m1.828-.005a3.385 3.385 0 1 1 3.39 3.379 3.38 3.38 0 0 1-3.386-3.379"/></svg></span></li>
+            <li><!-- LinkedIn address not set yet: icon is shown but is not a link --><span class="soc in" data-missing-link="linkedin" role="img" aria-label="LinkedIn"><svg aria-hidden="true" focusable="false" viewBox="234.27 1606.676 23.816 20.281"><path d="M251.43 1623.836h-2.985v-4.672c0-1.113-.02-2.55-1.55-2.55-1.532 0-1.793 1.214-1.793 2.468v4.754h-2.985v-9.61h2.867v1.313h.04a3.13 3.13 0 0 1 2.824-1.55c3.027 0 3.582 1.988 3.582 4.573Zm-12.68-10.922a1.732 1.732 0 0 1 0-3.465 1.732 1.732 0 0 1 0 3.465m1.492 10.922h-2.984v-9.61h2.984Zm12.676-17.156h-17.16a1.47 1.47 0 0 0-1.488 1.449v17.234a1.47 1.47 0 0 0 1.488 1.45h17.16a1.47 1.47 0 0 0 1.492-1.45v-17.234a1.476 1.476 0 0 0-1.492-1.453m4 18.996a.38.38 0 0 0 .379-.371v-.024c0-.28-.172-.414-.516-.414h-.558v1.465h.21v-.64h.258l.004.007.403.633h.226l-.433-.652Zm-.242-.149h-.246v-.496h.312c.16 0 .34.028.34.239 0 .238-.184.257-.406.257"/><path d="M256.7 1624.21a1.374 1.374 0 1 0 .027 0zm0 2.59a1.204 1.204 0 0 1-1.222-1.183 1.204 1.204 0 1 1 2.406-.043v.024c.015.648-.5 1.187-1.153 1.203z"/></svg></span></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</div>
+<script src="assets/main.js" defer></script>
+</body>
+</html>
